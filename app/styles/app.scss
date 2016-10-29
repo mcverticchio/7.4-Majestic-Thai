@@ -15,3 +15,50 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+html{
+  height: 100%;
+}
+
+.heading {
+  margin: 0;
+}
+
+.mainHeader{
+  margin: 0;
+  width: 100%;
+  header {
+    background: white;
+    height: 100px;
+  }
+  h1,
+  h4{
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    // opacity: 1;
+  }
+  .mainImg {
+    background-image: url('http://www.thomasdecian.com/wp-content/uploads/2015/10/Food-photography-bangkok-thailand.jpg');
+    overflow: none;
+    background-repeat: none;
+    background-size: 100%;
+    height: 500px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 40px;
+  }
+    span {
+      position: absolute;
+      left: 420px;
+      top: 260px;
+      opacity: 0.85;
+  }
+}
+
+body {
+  font-family: 'Lobster Two', cursive;
+  h6 {
+    color: red;
+  }
+}
