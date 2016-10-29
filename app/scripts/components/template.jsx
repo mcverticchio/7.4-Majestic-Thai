@@ -10,9 +10,6 @@ var TemplateContainer = React.createClass({
             <h1 className="mainHeading">
               Majestic Thai
             </h1>
-            <h4 className="address">
-              1234 Main Street Greenville, SC 00000
-            </h4>
           </header>
           <div className="mainImg"><span>Authentic Thai Food</span></div>
         </div>

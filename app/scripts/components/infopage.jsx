@@ -3,6 +3,12 @@ var React = require('react');
 var TemplateContainer = require('./template.jsx').TemplateContainer;
 
 var InfoPageComponent = React.createClass({
+  handleClick: function(e){
+    e.preventDefault();
+    var router = this.props.router;
+
+    router.navigate('menu/', {trigger: true});
+  },
   render: function(){
     return(
     <TemplateContainer>
@@ -35,7 +41,7 @@ var InfoPageComponent = React.createClass({
       ― Morgan
     </div>
 
-    <button type="submit" classNameName="btn btn-primary">View Menu Items</button>
+    <button onClick={this.handleSubmit} classNameName="btn btn-primary">View Menu Items</button>
     </div>
 
     </TemplateContainer>
