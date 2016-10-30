@@ -53,7 +53,7 @@ var InfoPageComponent = React.createClass({
     </div>
 
     <div>
-    <button onClick={this.handleSubmit} className="btn btn-primary viewMenuBtn">View Menu Items</button>
+    <button onClick={this.handleClick} className="btn btn-primary viewMenuBtn">View Menu Items</button>
     </div>
 
     </TemplateContainer>

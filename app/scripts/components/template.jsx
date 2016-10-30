@@ -1,5 +1,6 @@
 var React = require('react');
 
+// <div className="logo"></div>
 var TemplateContainer = React.createClass({
   render: function(){
     return (
@@ -10,13 +11,18 @@ var TemplateContainer = React.createClass({
               <h1 className="mainHeading">
                 Majestic Thai
               </h1>
-              <div className="logo"></div>
+
+              <div className="socialMediaIcons">
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+              </div>
             </header>
           </div>
 
         <div className="row">
           <div col-md-12>
-            <div className="mainImg"><span>Authentic Thai Food</span></div>
+            <div className="mainImg"><span className="headerText">Authentic Thai Food</span></div>
           </div>
         </div>
 
@@ -26,9 +32,12 @@ var TemplateContainer = React.createClass({
           <div className="col-md-12">
             <footer>
               <h5>Contact Information</h5>
-              <i class="fa fa-envelope" aria-hidden="true"></i><span className="email">majesticthai@email.com</span>
-              <i class="fa fa-phone" aria-hidden="true"></i><span>(888)888-8888</span>
-              <span>1234 Main Street Greenville, SC 00000</span>
+                <span className="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <span className="email">majesticthai@email.com</span>
+                <span className="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                <span>(888)888-8888</span>
+                <span className="glyphicon glyphicon-home" aria-hidden="true"></span>
+                <span>1234 Main Street Greenville, SC 00000</span>
             </footer>
           </div>
         </div>

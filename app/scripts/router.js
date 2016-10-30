@@ -21,7 +21,7 @@ var AppRouter = Backbone.Router.extend({
     );
   },
   menu: function(){
-    console.log('menu route');
+    // console.log('menu route');
     ReactDOM.render(
       React.createElement(ItemContainer, {router:this}),
       document.getElementById('app')
