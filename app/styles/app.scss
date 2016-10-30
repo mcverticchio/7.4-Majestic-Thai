@@ -16,9 +16,15 @@ img {
   max-width: 100%;
 }
 
-html{
-  height: 100%;
+html, {
+  height: 100%auto;
+  body {
+    position: relative;
+    background-size: cover;
+    background-image: url('http://www3.hilton.com/resources/media/hi/DFWSLHF/en_US/img/shared/full_page_image_gallery/main/HH_din006_52_675x359_FitToBoxSmallDimension_LowerCenter.jpg')
+  }
 }
+
 
 
 // .heading {
@@ -28,12 +34,12 @@ html{
 //HEADER AND FOOTER STYLING
 
 .mainHeader{
-  margin: 0;
-  width: 100%;
+  width: 1280px;
+  margin-left: -70px;
   header {
-    background: #F7F7F0;
-    height: 130px;
-    color: black;
+    background: #5D1B05;
+    height: 80px;
+    color: white;
   }
   .logo{
     background-image: url('../images/flowerLogo.png');
@@ -41,7 +47,7 @@ html{
     height: 50px;
     width: 50px;
     position: absolute;
-    right:622px;
+    right:480px;
     bottom: 10px;
   }
   h1,
@@ -53,6 +59,9 @@ html{
   h1 {
     margin-top: 30px;
   }
+}
+
+
   .mainImg {
     background-image: url('http://www.thomasdecian.com/wp-content/uploads/2015/10/Food-photography-bangkok-thailand.jpg');
     overflow: none;
@@ -63,6 +72,8 @@ html{
     font-family: 'Merriweather', serif;
     text-align: center;
     font-size: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
   }
     span {
       position: absolute;
@@ -70,92 +81,100 @@ html{
       top: 260px;
       opacity: 0.85;
   }
+
+.footer {
+  background: #5D1B05;
+  margin-top: 50px;
+  margin-left: -70px;
+  margin-right: 0px;
+  width: 1280px;
 }
 
 footer {
-  margin-top: 50px;
-  background: #5D1B05;
+  // background-image: url('https://s-media-cache-ak0.pinimg.com/originals/78/7a/77/787a7788004fd38b01585db114372ecd.jpg');
   height: 150px;
   color: white;
-  font-family: 'Merriweather', serif;
+  font-family: 'Arima Madurai', cursive;
   padding: 20px;
   h5 {
     font-size: 20px;
     text-align: center;
   }
   span {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 15px;
     position: relative;
     top: 30px;
-  }
-  .email {
-    margin-left: 300px;
+    left: 300px
   }
 }
 
 
 //INFO PAGE STYLING
-body {
-  font-family: 'Arima Madurai', cursive;
+
   .history {
-    background: #F7F7F0;
-    margin: 0;
+    background: #F3E3D2;
     color: black;
     font-size: 20px;
     line-height:2em;
     margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Arima Madurai', cursive;
+    .historyHeading {
+      padding: 60px;
+      padding-bottom: 0px;
+      padding-top: 40px;
+      margin-top: 0px;
+    }
+    .historySection {
+      padding: 60px;
+      padding-top: 0px;
+      text-align: justify;
+      padding-bottom: 40px;
+      margin-bottom: 0px;
+    }
+    p {
+      padding: 50px;
+    }
   }
-  .historyHeading {
-    padding: 60px;
-    padding-bottom: 0px;
-    padding-top: 40px;
-    margin-top: 0px;
-  }
-  .historySection {
-    padding: 60px;
-    padding-top: 0px;
-    text-align: justify;
-    padding-bottom: 40px;
-    margin-bottom: 0px;
-  }
-  p {
-    padding: 50px;
-  }
-  .reviewOne,
-  .reviewTwo,
-  .reviewThree {
-    background-image: url('../images/reviewOneImage.jpg');
-    // background-size: 100% 100%;
-    position: relative;
-    background-repeat: none;
-    color: black;
-    opacity: 0.99;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-left:15px;
-    margin-right:10px;
-  }
-  .reviewTwo {
-    background-image: url('../images/reviewTwoImage.jpg');
-  }
-  .reviewThree {
-    background-image: url('../images/reviewimageThree.jpg');
-    background-size: 100% 100%;
-  }
+
+  .reviews {
+    margin: 0 auto;
+    font-family: 'Arima Madurai', cursive;
+    .reviewOne,
+    .reviewTwo,
+    .reviewThree {
+      background-image: url('../images/reviewOneImage.jpg');
+      // background-size: 100% 100%;
+      position: relative;
+      background-repeat: none;
+      color: black;
+      opacity: 0.99;
+      border-radius: 50%;
+      width: 365px;
+      height: 365px;
+      margin-left:15px;
+    }
+    .reviewTwo {
+      background-image: url('../images/reviewTwoImage.jpg');
+    }
+    .reviewThree {
+      background-image: url('../images/reviewimageThree.jpg');
+      background-size: 100% 100%;
+    }
     .firstReview,
     .secondReview,
     .thirdReview {
       background: white;
-      opacity: 0.7;
+      opacity: 0.6;
       border: 1px solid red;
       border-radius: 10px;
       position: absolute;
       padding: 40px;
-      top: 50px;
+      top: 33px;
       width:300px;
-      left: 50px;
+      left: 35px;
       height: 300px;
     }
     p {
@@ -170,7 +189,7 @@ body {
 }
 
 .viewMenuBtn {
-  margin-left: 540px;
+  margin-left: 475px;
   margin-top: 50px;
   padding: 10px;
   border-radius: 5px;
