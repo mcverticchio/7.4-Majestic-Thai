@@ -16,7 +16,7 @@ var AppRouter = Backbone.Router.extend({
     // console.log(this);
 
     ReactDOM.render(
-      React.createElement(ItemContainer, {router:this}),
+      React.createElement(InfoPageComponent, {router:this}),
       document.getElementById('app')
     );
   },

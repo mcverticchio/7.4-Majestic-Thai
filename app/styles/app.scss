@@ -20,22 +20,38 @@ html{
   height: 100%;
 }
 
-.heading {
-  margin: 0;
-}
+
+// .heading {
+//   margin: 0;
+// }
+
+//HEADER AND FOOTER STYLING
 
 .mainHeader{
   margin: 0;
   width: 100%;
   header {
-    background: white;
-    height: 100px;
+    background: #F7F7F0;
+    height: 130px;
+    color: black;
+  }
+  .logo{
+    background-image: url('../images/flowerLogo.png');
+    background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right:622px;
+    bottom: 10px;
   }
   h1,
   h4{
     text-align: center;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Arima Madurai', cursive;
     // opacity: 1;
+  }
+  h1 {
+    margin-top: 30px;
   }
   .mainImg {
     background-image: url('http://www.thomasdecian.com/wp-content/uploads/2015/10/Food-photography-bangkok-thailand.jpg');
@@ -56,9 +72,111 @@ html{
   }
 }
 
-body {
-  font-family: 'Lobster Two', cursive;
-  h6 {
-    color: red;
+footer {
+  margin-top: 50px;
+  background: #5D1B05;
+  height: 150px;
+  color: white;
+  font-family: 'Merriweather', serif;
+  padding: 20px;
+  h5 {
+    font-size: 20px;
+    text-align: center;
   }
+  span {
+    margin-right: 15px;
+    font-size: 15px;
+    position: relative;
+    top: 30px;
+  }
+  .email {
+    margin-left: 300px;
+  }
+}
+
+
+//INFO PAGE STYLING
+body {
+  font-family: 'Arima Madurai', cursive;
+  .history {
+    background: #F7F7F0;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    line-height:2em;
+    margin-bottom: 20px;
+  }
+  .historyHeading {
+    padding: 60px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    margin-top: 0px;
+  }
+  .historySection {
+    padding: 60px;
+    padding-top: 0px;
+    text-align: justify;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+  }
+  p {
+    padding: 50px;
+  }
+  .reviewOne,
+  .reviewTwo,
+  .reviewThree {
+    background-image: url('../images/reviewOneImage.jpg');
+    // background-size: 100% 100%;
+    position: relative;
+    background-repeat: none;
+    color: black;
+    opacity: 0.99;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left:15px;
+    margin-right:10px;
+  }
+  .reviewTwo {
+    background-image: url('../images/reviewTwoImage.jpg');
+  }
+  .reviewThree {
+    background-image: url('../images/reviewimageThree.jpg');
+    background-size: 100% 100%;
+  }
+    .firstReview,
+    .secondReview,
+    .thirdReview {
+      background: white;
+      opacity: 0.7;
+      border: 1px solid red;
+      border-radius: 10px;
+      position: absolute;
+      padding: 40px;
+      top: 50px;
+      width:300px;
+      left: 50px;
+      height: 300px;
+    }
+    p {
+      line-height: 2;
+      padding: 0px;
+    }
+    h4 {
+      font-size: 23px;
+      font-weight: 900;
+      text-align: center;
+    }
+}
+
+.viewMenuBtn {
+  margin-left: 540px;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  font-family: 'Oleo Script', cursive;
+  font-size: 20px;
+  background: #5D1B05;
+  border: none;
 }
