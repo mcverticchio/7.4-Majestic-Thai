@@ -6,3 +6,4 @@ To Do:
 4. Add clicked on items to new array - [working on]
 5. Add price total (reduce) - [working on]
 6. Save ordered items to tiny-lasagna-server - [working on]
+7. Deployment Issues - [Ask Dan]
