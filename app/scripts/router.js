@@ -2,10 +2,10 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 
-var ItemContainer = require('./components/item.jsx').ItemContainer;
+var OrderingContainer = require('./components/item.jsx').OrderingContainer;
 var InfoPageComponent = require('./components/infopage.jsx').InfoPageComponent;
 // var SecondScreenContainer = require('./components/order.jsx').SecondScreenContainer;
-var OrderCollection = require('./models/item').OrderCollection;
+// var OrderCollection = require('./models/item').OrderCollection;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
@@ -23,7 +23,7 @@ var AppRouter = Backbone.Router.extend({
   menu: function(){
     // console.log('menu route');
     ReactDOM.render(
-      React.createElement(ItemContainer, {router:this}),
+      React.createElement(OrderingContainer, {router:this}),
       document.getElementById('app')
     );
   },

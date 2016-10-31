@@ -88,6 +88,8 @@ html, {
   overflow: none;
   background-repeat: none;
   background-size: 100%;
+  // background-attachment: fixed;
+  background-position: center;
   height: 500px;
   color: white;
   font-family: 'Merriweather', serif;
@@ -209,7 +211,7 @@ footer {
     background-image: url('../images/reviewTwoImage.jpg');
   }
   .reviewThree {
-    background-image: url('../images/reviewimageThree.jpg');
+    background-image: url('../images/reviewImageThree.jpg');
     background-size: 100% 100%;
   }
   .firstReview,
@@ -256,8 +258,20 @@ footer {
   border: none;
   box-shadow:3px 3px 10px #949494;
 }
+
+.addToCartBtn {
+  background: #B4150F;
+  border: none;
+  font-family: 'Satisfy', cursive;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  bottom: 35px;
+}
+
 .viewMenuBtn:hover,
-.backButton:hover {
+.backButton:hover,
+.addToCartBtn:hover {
   background: #B4150F;
 }
 
@@ -280,7 +294,7 @@ footer {
   background: #FF962B;
   border: 1px solid #FF962B;
   opacity: 0.9;
-  transition: all .2s ease-in-out;
+  // transition: all .2s ease-in-out;
   .itemTitle {
     font-size: 25px;
   }
@@ -294,5 +308,11 @@ footer {
 }
 .listItems:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  // transform: scale(1.1);
+}
+
+.orderHeading {
+  font-family: 'Satisfy', cursive;
+  color: white;
+  margin-top: -43px;
 }
