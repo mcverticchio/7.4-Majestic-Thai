@@ -78,7 +78,8 @@ var Backbone = require('backbone');
 
 var TemplateContainer = require('./template.jsx').TemplateContainer;
 var OrderCollection = require('../models/item').OrderCollection;
-var Order = require('../models/item').Order;
+var OrderModel = require('../models/item').Order;
+var OrderItemCollection = require('../models/item').OrderItemCollection;
 
 var menuItems= require('../data/menudata').menuItems;
 // var Checkout = require('./order.jsx').OrderContainer;
@@ -139,7 +140,7 @@ var Menu = React.createClass({displayName: "Menu",
 
 var OrderingContainer = React.createClass({displayName: "OrderingContainer",
   getInitialState: function(){
-    var orderCollection = new OrderCollection();
+    var orderCollection = new OrderItemCollection();
     return {
       orderCollection: orderCollection
     }
@@ -162,16 +163,18 @@ var OrderingContainer = React.createClass({displayName: "OrderingContainer",
     router.navigate('', {trigger:true});
   },
   placeOrder: function(){
-    var newOrder = new Order();
+    var newOrder = new OrderModel();
     var orderCollection = this.state.orderCollection;
     // orderCollection.save();
-    // newOrder.set({items: orderCollection.toJSON()});
-    newOrder.save([orderCollection]);
+    newOrder.set({items: orderCollection.toJSON()});
+    // orderCollection.
+
+    newOrder.save();
     // console.log(newOrder);
 
     orderCollection.reset([]);
 
-    // this.setState({orderCollection: new OrderItemCollection});
+    this.setState({orderCollection: new OrderItemCollection});
   },
 
   render: function(){
@@ -399,11 +402,13 @@ $(function(){
 var Backbone = require('backbone');
 
 var Order = Backbone.Model.extend({
-  idAttribute: '_id'
+  idAttribute: '_id',
+  urlRoot: 'https://tiny-lasagna-server.herokuapp.com/collections/carolinescheckout'
 });
 
 var OrderCollection = Backbone.Collection.extend({
   model: Order,
+  url: 'https://tiny-lasagna-server.herokuapp.com/collections/carolinescheckout',
   total: function(){
     return this.reduce(function(sum, model){
       return sum + parseFloat(model.get('price'));
@@ -418,8 +423,11 @@ var OrderItem = Backbone.Model.extend({
 
 var OrderItemCollection = Backbone.Collection.extend({
   model: OrderItem,
-  url: 'https://tiny-lasagna-server.herokuapp.com/collections/carolinescheckout',
-
+  total: function(){
+    return this.reduce(function(sum, model){
+      return sum + parseFloat(model.get('price'));
+    }, 0);
+  }
 });
 
 module.exports = {
