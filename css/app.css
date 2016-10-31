@@ -5908,7 +5908,7 @@ footer {
   .reviews .reviewTwo {
     background-image: url("../images/reviewTwoImage.jpg"); }
   .reviews .reviewThree {
-    background-image: url("../images/reviewimageThree.jpg");
+    background-image: url("../images/reviewImageThree.jpg");
     background-size: 100% 100%; }
   .reviews .firstReview,
   .reviews .secondReview,
@@ -5944,8 +5944,18 @@ footer {
   border: none;
   box-shadow: 3px 3px 10px #949494; }
 
+.addToCartBtn {
+  background: #B4150F;
+  border: none;
+  font-family: 'Satisfy', cursive;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  bottom: 35px; }
+
 .viewMenuBtn:hover,
-.backButton:hover {
+.backButton:hover,
+.addToCartBtn:hover {
   background: #B4150F; }
 
 .menuTitle {
@@ -5959,9 +5969,7 @@ footer {
   font-family: 'Arima Madurai', cursive;
   background: #FF962B;
   border: 1px solid #FF962B;
-  opacity: 0.9;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
+  opacity: 0.9; }
   .listItems .itemTitle {
     font-size: 25px; }
   .listItems .itemDescription {
@@ -5971,8 +5979,11 @@ footer {
     font-weight: bolder; }
 
 .listItems:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1); }
+  cursor: pointer; }
+
+.orderHeading {
+  font-family: 'Satisfy', cursive;
+  color: white;
+  margin-top: -43px; }
 
 /*# sourceMappingURL=app.css.map */
