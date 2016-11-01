@@ -5,76 +5,133 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Questions Collection [/questions]
+## Dishes Collection [/dishes]
 
-### List All Questions [GET]
+### List Menu Items [GET]
 
 + Response 200 (application/json)
 
-        [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
+           [
+            {   "id":101,
+                "dish": "Yellow Curry",
+                "price": "10.95",
+                "description": "Mild yellow curry, containing rich flavors of curry powder, coconut milk, potatoes, onions and carrots."
+            },
+            {   "id":102,
+                "dish": "Pad Thai",
+                "price": "10.95",
+                "description": "One of the most famous Thai rice noodles dish cooked with egg, bean spouts, tofu and sprinkled with ground peanut."
+            },
+            {   "id":103,
+                "dish": "Orange Chicken",
+                "price": "10.95",
+                "description": "Deep fried chicken sauteed in a tangy orange sauce."
+            }
+        ]
+        
+## Dishes Collection [/dishes/:id]
+
++ Parameters
+    + id(number) - ID of the Dish in the form of an integer
+    
+
+###List Menu Items [GET]
+    
++ Response 200 (application/json)
+
+        [ 
+            {   "id":101,
+                "dish": "Yellow Curry",
+                "price": "10.95",
+                "description": "Mild yellow curry, containing rich flavors of curry powder, coconut milk, potatoes, onions and carrots."
             }
         ]
 
-### Create a New Question [POST]
+## List of Orders [/orders]
 
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
+###List of Order Items [GET]
 
-+ Request (application/json)
++ Response 200 (application/json)
 
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
 
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
+ [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
+                "orderid":1,
+                "time": "3:12 pm",
+                "total": 28.85,
+                "items":[
+                            {   "id":7,
+                                "dish": "Yellow Curry",
+                                "price": "10.95",
+                                "description": "Minced chicken tossed with lime juice, chili paste, onion, basil leaf, roasted rice powder, cilantro, and mixed greens"
+                            },
+                             {   "id":8,
+                                "dish": "Pad Thai",
+                                "price": "10.95",
+                                "description": "One of the most famous Thai rice noodles dish cooked with egg, bean spouts, tofu and sprinkled with ground peanut."
+                            },
+                            {   
+                                "id":1,
+                                "dish": "Orange Chicken",
+                                "price": "10.95",
+                                "description": "Deep fried chicken sauteed in a tangy orange sauce."
+                            }
+                        ]
+            },
+            {
+                "orderid":2,
+                "time": "4:32 pm",
+                "total": 22.85,
+                "items":[
+                           {   "id":7,
+                                "dish": "Yellow Curry",
+                                "price": "10.95",
+                                "description": "Minced chicken tossed with lime juice, chili paste, onion, basil leaf, roasted rice powder, cilantro, and mixed greens"
+                            },
+                             {   "id":8,
+                                "dish": "Pad Thai",
+                                "price": "10.95",
+                                "description": "One of the most famous Thai rice noodles dish cooked with egg, bean spouts, tofu and sprinkled with ground peanut."
+                            },
+                            {   
+                                "id":1,
+                                "dish": "Orange Chicken",
+                                "price": "10.95",
+                                "description": "Deep fried chicken sauteed in a tangy orange sauce."
+                            }
+                        ]
             }
+        ]
+
+## List of Orders [/orders/3]
+
+###List of Order Items [GET]
+
++ Response 200 (application/json)
+
+
+ [
+            {
+                "orderid":1,
+                "time": "3:12 pm",
+                "total": 28.85,
+                "items":[
+                            {   "id":7,
+                                "dish": "Yellow Curry",
+                                "price": "10.95",
+                                "description": "Minced chicken tossed with lime juice, chili paste, onion, basil leaf, roasted rice powder, cilantro, and mixed greens"
+                            },
+                             {   "id":8,
+                                "dish": "Pad Thai",
+                                "price": "10.95",
+                                "description": "One of the most famous Thai rice noodles dish cooked with egg, bean spouts, tofu and sprinkled with ground peanut."
+                            },
+                            {   
+                                "id":1,
+                                "dish": "Orange Chicken",
+                                "price": "10.95",
+                                "description": "Deep fried chicken sauteed in a tangy orange sauce."
+                            }
+                        ]
+            }
+    ]
