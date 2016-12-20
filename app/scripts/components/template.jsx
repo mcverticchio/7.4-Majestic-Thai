@@ -13,7 +13,7 @@ var TemplateContainer = React.createClass({
               </h1>
 
               <div className="socialMediaIcons">
-                <i className="fa fa-facebook" aria-hidden="true"></i>
+                <i className="fa fa-facebook-square" aria-hidden="true"></i>
                 <i className="fa fa-twitter" aria-hidden="true"></i>
                 <i className="fa fa-instagram" aria-hidden="true"></i>
               </div>
