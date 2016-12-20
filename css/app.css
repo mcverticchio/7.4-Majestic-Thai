@@ -5777,7 +5777,7 @@ html {
   width: 1280px;
   margin-left: -70px; }
   .mainHeader header {
-    background: #B4150F;
+    background: #A2130E;
     height: 60px;
     color: white;
     opacity: 0.9; }
@@ -5792,22 +5792,18 @@ html {
     float: right;
     position: relative;
     bottom: 60px; }
-  .mainHeader .fa-facebook:hover,
+  .mainHeader .fa-facebook-square:hover,
   .mainHeader .fa-twitter:hover,
   .mainHeader .fa-instagram:hover {
-    font-size: 40px;
+    font-size: 36px;
     -webkit-transition: font-size 0.2s ease;
     transition: font-size 0.2s ease;
     cursor: pointer; }
-  .mainHeader .fa-facebook:hover {
-    font-size: 36px; }
-  .mainHeader .fa-facebook {
-    background: #3B5998;
-    color: white;
-    font-size: 30px;
+  .mainHeader .fa-facebook-square {
+    font-size: 34px;
     width: 30px;
     padding-left: 8px;
-    margin-right: 10px; }
+    margin-right: 18px; }
   .mainHeader .fa-twitter {
     margin-right: 10px;
     color: #11C1FF; }
@@ -5834,7 +5830,7 @@ html {
   opacity: 0.85; }
 
 .footer {
-  background: #B4150F;
+  background: #A2130E;
   margin-top: 50px;
   margin-left: -70px;
   margin-right: 0px;
@@ -5857,7 +5853,6 @@ footer {
     left: 265px; }
   footer .glyphicon {
     font-size: 17px;
-    background: #B4150F;
     color: white;
     width: 30px;
     height: 30px;
@@ -5915,7 +5910,7 @@ footer {
   .reviews .thirdReview {
     background: white;
     opacity: 0.6;
-    border: 1px solid #B4150F;
+    border: 1px solid #A2130E;
     border-radius: 10px;
     position: absolute;
     padding: 40px;
@@ -5940,12 +5935,12 @@ footer {
   width: 200px;
   font-family: 'Satisfy', cursive;
   font-size: 20px;
-  background: #B4150F;
+  background: #A2130E;
   border: none;
   box-shadow: 3px 3px 10px #949494; }
 
 .addToCartBtn {
-  background: #B4150F;
+  background: #A2130E;
   border: none;
   font-family: 'Satisfy', cursive;
   border-radius: 5px;
@@ -5956,7 +5951,7 @@ footer {
 .viewMenuBtn:hover,
 .backButton:hover,
 .addToCartBtn:hover {
-  background: #B4150F; }
+  background: #A2130E; }
 
 .menuTitle {
   font-family: 'Satisfy', cursive;
@@ -5985,4 +5980,5 @@ footer {
   font-family: 'Satisfy', cursive;
   color: white;
   margin-top: -43px; }
+
 /*# sourceMappingURL=app.css.map */
