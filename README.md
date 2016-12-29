@@ -1,9 +1,6 @@
 ## 7 4 Majestic Thai
-To Do: 
-1. Style first and second pages - [DONE]
-2. Transition between screens - [DONE]
-3. Add list items to page from local storage - [DONE]
-4. Add clicked on items to new array - [DONE]
-5. Add price total (reduce) - [DONE]
-6. Save ordered items to tiny-lasagna-server - [DONE]
-7. Deployment Issues - [DONE- Delay between deployments]
+Description: 
+A restaurant application that enables users to view and order food items and save to a cart.  
+This assignment enabled me to create wireframes, a domain model, and an outline of objects needed as part of the planning process when making a complex front end application.  I practiced executing client requirements to make a complete application.
+
+Tech: HTML/CSS/SCSS, Bootstrap, jQuery, Backbone, React, JSON
